@@ -20,9 +20,9 @@ class InitSeeder extends Seeder
         $getUserModel = $reflector->getMethod('getUserModel');
         $getUserModel->setAccessible(true);
         $getUserModel->invoke($filamentMakeUserCommand)::create([
-            'name' => 'YOUR NAME',
-            'email' => 'YOUR@EMAIL.COM',
-            'password' => Hash::make('YOUR-PASSWORD'),
+            'name' => 'Claude',
+            'email' => 'claude@gmail.com',
+            'password' => Hash::make('claude'),
         ]);
     }
 }
